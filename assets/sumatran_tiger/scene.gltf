@@ -1,0 +1,255 @@
+{
+  "accessors": [
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 6204,
+      "max": [
+        0.23728099465370178,
+        0.85373502969741821,
+        0.30124101042747498
+      ],
+      "min": [
+        -0.24602200090885162,
+        -0.63553702831268311,
+        -0.33991500735282898
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 74448,
+      "componentType": 5126,
+      "count": 6204,
+      "max": [
+        0.99974721670150757,
+        0.9995456337928772,
+        0.99999833106994629
+      ],
+      "min": [
+        -0.99952250719070435,
+        -0.99997603893280029,
+        -0.99998676776885986
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 6204,
+      "max": [
+        6203
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 148896,
+      "componentType": 5126,
+      "count": 2424,
+      "max": [
+        0.15887400507926941,
+        0.53876000642776489,
+        0.23611700534820557
+      ],
+      "min": [
+        -0.16258500516414642,
+        -0.60155397653579712,
+        -0.33546999096870422
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 177984,
+      "componentType": 5126,
+      "count": 2424,
+      "max": [
+        0.99928700923919678,
+        0.999531090259552,
+        0.72859066724777222
+      ],
+      "min": [
+        -0.99984019994735718,
+        -0.99273949861526489,
+        -0.999900221824646
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 24816,
+      "componentType": 5125,
+      "count": 2424,
+      "max": [
+        2423
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "Jérémie Louvetz (https://sketchfab.com/jeremielouvetz)",
+      "license": "CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)",
+      "source": "https://sketchfab.com/3d-models/sumatran-tiger-95c4008c4c764c078f679d4c320e7b18",
+      "title": "Sumatran Tiger"
+    },
+    "generator": "Sketchfab-6.22.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 34512,
+      "byteOffset": 0,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 207072,
+      "byteOffset": 34512,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 241584,
+      "uri": "scene.bin"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "material",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.53947948901210718,
+          0.28314874042999194,
+          0.093058962846687493,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.5
+      }
+    },
+    {
+      "doubleSided": true,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "name": "Ventre",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.64447968197058214,
+          0.61720656241965088,
+          0.53947948901210718,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.20000000000000001
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0
+          },
+          "indices": 2,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 4,
+            "POSITION": 3
+          },
+          "indices": 5,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "name": "RootNode (gltf orientation matrix)",
+      "rotation": [
+        -0.70710678118654746,
+        -0,
+        -0,
+        0.70710678118654757
+      ]
+    },
+    {
+      "children": [
+        2
+      ],
+      "matrix": [
+        0.99924850463867188,
+        -1.0842021724855044e-19,
+        0.03876054659485817,
+        0,
+        0.0010068925330415368,
+        0.99966251850128174,
+        -0.025957733392715454,
+        0,
+        -0.03874746710062027,
+        0.025977253913879395,
+        0.99891132116317749,
+        0,
+        -0.00086312682833522558,
+        0.00053968647262081504,
+        0.0029759444296360016,
+        1
+      ],
+      "name": "RootNode (model correction matrix)"
+    },
+    {
+      "children": [
+        3,
+        4
+      ],
+      "name": "tigre_sumatra_sketchfab.obj.cleaner.gles"
+    },
+    {
+      "mesh": 0,
+      "name": ""
+    },
+    {
+      "mesh": 1,
+      "name": ""
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "OSG_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ]
+}
+

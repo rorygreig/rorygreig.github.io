@@ -1,0 +1,11 @@
+Model Information:
+* title:	Lowpoly Hazmat Suit PS1 Style
+* source:	https://sketchfab.com/3d-models/lowpoly-hazmat-suit-ps1-style-8bca43dbd7ca4df9a17b8c84ae7ed3fe
+* author:	BitHack (https://sketchfab.com/bithack)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Lowpoly Hazmat Suit PS1 Style" (https://sketchfab.com/3d-models/lowpoly-hazmat-suit-ps1-style-8bca43dbd7ca4df9a17b8c84ae7ed3fe) by BitHack (https://sketchfab.com/bithack) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

@@ -534,7 +534,7 @@
   ],
   "images": [
     {
-      "uri": "textures/DefaultMaterial_metallicRoughness.png"
+      "uri": "textures/DefaultMaterial_metallicRoughness.jpg"
     },
     {
       "uri": "textures/DefaultMaterial_normal.jpeg"
