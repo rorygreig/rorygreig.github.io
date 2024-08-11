@@ -3,84 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rory Greig - Research Engineer</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Rory Greig - Personal Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body {
-            background-image: url('/api/placeholder/1920/1080');
+            background-image: url('background.jpg');
             background-size: cover;
-            background-attachment: fixed;
             background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.8); /* Adjust the last value (0.8) to change the fade level */
+            z-index: -1;
         }
         .bg-custom {
             background-color: rgba(255, 255, 255, 0.9);
         }
-        .text-custom {
-            color: #3498db;
-        }
         .bg-custom-dark {
-            background-color: rgba(52, 73, 94, 0.9);
+            background-color: #2c3e50;
         }
-        .gradient-bg {
-            background: linear-gradient(135deg, #3498db, #2980b9);
+        .text-custom {
+            color: #2c3e50;
+        }
+        .container {
+            padding: 2rem;
         }
         .card {
-            backdrop-filter: blur(10px);
-            background-color: rgba(255, 255, 255, 0.8);
+            padding: 2rem;
+            margin-bottom: 1rem;
         }
     </style>
 </head>
 <body class="font-sans">
-    <header class="bg-custom-dark text-white shadow-md">
-        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="text-2xl font-bold">
-                Rory Greig
-            </div>
-            <div class="flex space-x-6">
-                <a href="#about" class="hover:text-custom">About</a>
-                <a href="#experience" class="hover:text-custom">Experience</a>
-                <a href="#publications" class="hover:text-custom">Publications</a>
-                <a href="#contact" class="hover:text-custom">Contact</a>
-            </div>
-        </nav>
-    </header>
+    <div class="container mx-auto px-6 py-12" role="main">
+        <section id="about" class="section mb-16">
+            <div class="bg-custom rounded-lg shadow-lg p-8">
+                <div class="flex justify-between items-center mb-6">
+                    <img src="profile_picture.png" alt="Rory Greig" class="rounded-full border-4 border-white shadow-md object-cover" style="width: 80px; height: 80px;">
+                </div>
 
-    <main class="container mx-auto px-6 py-12">
-        <section id="about" class="mb-16">
-            <div class="flex flex-col md:flex-row items-center bg-custom rounded-lg shadow-lg p-8">
-                <img src="profile_picture.png" alt="Rory Greig" class="w-32 h-32 rounded-full mb-4 md:mb-0 md:mr-8 border-4 border-white shadow-md object-cover">
                 <div>
-                    <h1 class="text-4xl font-bold mb-2 text-custom">Rory Greig</h1>
-                    <p class="text-xl mb-4 text-gray-700">I am a Research Engineer on the AGI Safety and Alignment team at Google DeepMind, working on Scalable Oversight techniques (e.g. Debate)</p>
-                    <p class="mb-4 text-gray-600">I have experience in machine learning, evolutionary computing, agent-based models, and high-performance simulation. I am interested in AI Safety, Complexity Science and Artificial Life (ALIFE)</p>
+                    <h1 id="rory-greig" class="text-4xl font-bold mb-2 text-custom">Rory Greig</h1>
+                    <p class="mb-4">I am a Research Engineer on the AGI Safety and Alignment team at Google DeepMind, working on Scalable Oversight techniques (e.g. Debate)</p>
+                    <p class="mb-4">I have experience in machine learning, evolutionary computing, agent-based models, and high-performance simulation. I am interested in AI Safety, Complexity Science and Artificial Life (ALIFE)</p>
                     <div class="flex space-x-4">
-                        <a href="https://linkedin.com/in/rory-greig-3186497a" target="_blank" class="text-custom hover:text-blue-800 transition duration-300">
-                            <i class="fab fa-linkedin fa-2x"></i>
+                        <a href="https://linkedin.com/in/rory-greig-3186497a" class="text-custom hover:text-blue-800 transition duration-300" target="_blank">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
                         </a>
-                        <a href="https://scholar.google.com/citations?user=XqBS40QAAAAJ" target="_blank" class="text-custom hover:text-blue-800 transition duration-300">
-                            <i class="fas fa-graduation-cap fa-2x"></i>
+                        <a href="https://scholar.google.com/citations?user=XqBS40QAAAAJ" class="text-custom hover:text-blue-800 transition duration-300" target="_blank">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg>
                         </a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="experience" class="mb-16">
+        <section id="experience" class="section mb-16">
             <h2 class="text-3xl font-bold mb-6 text-white bg-custom-dark inline-block px-4 py-2 rounded-lg">Experience</h2>
             <div class="space-y-8">
-                <div class="card rounded-lg shadow-lg p-6">
+                <div class="card rounded-lg shadow-lg">
                     <h3 class="text-2xl font-semibold text-custom">Senior Research Engineer</h3>
-                    <p class="text-gray-600 mb-2">Google DeepMind | January 2022 - Present</p>
-                    <ul class="list-disc list-inside text-gray-700">
+                    <p class="text-gray-600">Google DeepMind | January 2022 - Present</p>
+                    <ul class="list-disc list-inside mt-2">
                         <li>Working on techniques and infrastructure for both near term and longer term AGI safety.</li>
                         <li>Focus on aligning Large Language Models (LLMs) to human preferences using Reinforcement Learning finetuning.</li>
                     </ul>
                 </div>
-                <div class="card rounded-lg shadow-lg p-6">
-                    <h3 class="text-2xl font-semibold text-custom">Senior Research Scientist</h3>
-                    <p class="text-gray-600 mb-2">Improbable | 2019 - 2021</p>
-                    <ul class="list-disc list-inside text-gray-700">
+                <div class="card rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-semibold text-custom">Software Engineer and Research Scientist</h3>
+                    <p class="text-gray-600">Improbable | 2015 - 2021</p>
+                    <ul class="list-disc list-inside mt-2">
                         <li>Led research on genetic programming to learn symbolic logic for agent-based models from scratch.</li>
                         <li>Worked on GPU acceleration for high-performance COVID-19 agent-based models.</li>
                     </ul>
@@ -88,10 +87,10 @@
             </div>
         </section>
 
-        <section id="publications" class="mb-16">
+        <section id="publications" class="section mb-16">
             <h2 class="text-3xl font-bold mb-6 text-white bg-custom-dark inline-block px-4 py-2 rounded-lg">Selected Publications</h2>
-            <div class="card rounded-lg shadow-lg p-6">
-                <ul class="list-disc list-inside space-y-2 text-gray-700">
+            <div class="card rounded-lg shadow-lg">
+                <ul class="list-disc list-inside">
                     <li>"Improving alignment of dialogue agents via targeted human judgements" (September 2022)</li>
                     <li>"Generating Agent Based Models From Scratch With Genetic Programming" (ALIFE Conference, July 2021)</li>
                     <li>"A Dynamic Microsimulation Model for Epidemics" (Social Science & Medicine, December 2021)</li>
@@ -99,18 +98,16 @@
             </div>
         </section>
 
-        <section id="contact" class="mb-16">
+        <section id="contact" class="section mb-16">
             <h2 class="text-3xl font-bold mb-6 text-white bg-custom-dark inline-block px-4 py-2 rounded-lg">Contact</h2>
-            <div class="card rounded-lg shadow-lg p-6">
-                <p class="text-gray-700">Email: rorygreig@gmail.com</p>
+            <div class="card rounded-lg shadow-lg">
+                <p>Email: rorygreig@gmail.com</p>
             </div>
         </section>
-    </main>
+    </div>
 
-    <footer class="gradient-bg text-white py-6">
-        <div class="container mx-auto px-6 text-center">
-            <p>&copy; 2024 Rory Greig. All rights reserved.</p>
-        </div>
+    <footer class="container mx-auto px-6 text-center py-4">
+        <p>&copy; 2024 Rory Greig. All rights reserved.</p>
     </footer>
 </body>
 </html>
