@@ -1,28 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="theme-color" content="#000000">
-    
-	<!-- Including the bootstrap css via CDN -->
-    <link 
-      rel="stylesheet" 
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
-      crossorigin="anonymous"
-    >
-
-	<title>Virtual Sandbox</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rory Greig - Research Engineer</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        .bg-custom {
+            background-color: #f0f4f8;
+        }
+        .text-custom {
+            color: #2c5282;
+        }
+    </style>
 </head>
+<body class="bg-custom font-sans">
+    <header class="bg-white shadow-md">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <div class="text-2xl font-bold text-custom">
+                Rory Greig
+            </div>
+            <div class="flex space-x-4">
+                <a href="#about" class="text-gray-700 hover:text-custom">About</a>
+                <a href="#experience" class="text-gray-700 hover:text-custom">Experience</a>
+                <a href="#publications" class="text-gray-700 hover:text-custom">Publications</a>
+                <a href="#contact" class="text-gray-700 hover:text-custom">Contact</a>
+            </div>
+        </nav>
+    </header>
 
-<body>
-	<noscript>
-		You need to enable JavaScript to run this app.
-	</noscript>
-	<div id="root"></div>
-  <script src="../dist/bundle.js"></script>
+    <main class="container mx-auto px-6 py-8">
+        <section id="about" class="mb-12">
+            <div class="flex flex-col md:flex-row items-center">
+                <img src="profile_picture.png" alt="Rory Greig" class="w-48 h-48 rounded-full mb-4 md:mb-0 md:mr-8">
+                <div>
+                    <h1 class="text-4xl font-bold mb-2 text-custom">Rory Greig</h1>
+                    <p class="text-xl mb-4">Research Engineer on the AGI Safety and Alignment team at Google DeepMind</p>
+                    <p class="mb-4">I'm a research scientist and engineer with experience in machine learning, evolutionary computing, agent-based models, and high-performance simulation. My current focus is on alignment and safety of Large Language Models.</p>
+                    <div class="flex space-x-4">
+                        <a href="https://linkedin.com/in/rory-greig-3186497a" target="_blank" class="text-blue-600 hover:text-blue-800">
+                            <i class="fab fa-linkedin fa-2x"></i>
+                        </a>
+                        <a href="https://scholar.google.com/citations?user=YOURUSERID" target="_blank" class="text-blue-600 hover:text-blue-800">
+                            <i class="fas fa-graduation-cap fa-2x"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="mb-12">
+            <h2 class="text-3xl font-bold mb-4 text-custom">Experience</h2>
+            <div class="space-y-6">
+                <div>
+                    <h3 class="text-xl font-semibold">Senior Research Engineer</h3>
+                    <p class="text-gray-600">Google DeepMind | January 2022 - Present</p>
+                    <ul class="list-disc list-inside mt-2">
+                        <li>Working on techniques and infrastructure for both near term and longer term AGI safety.</li>
+                        <li>Focus on aligning Large Language Models (LLMs) to human preferences using Reinforcement Learning finetuning.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold">Senior Research Scientist</h3>
+                    <p class="text-gray-600">Improbable | 2019 - 2021</p>
+                    <ul class="list-disc list-inside mt-2">
+                        <li>Led research on genetic programming to learn symbolic logic for agent-based models from scratch.</li>
+                        <li>Worked on GPU acceleration for high-performance COVID-19 agent-based models.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="publications" class="mb-12">
+            <h2 class="text-3xl font-bold mb-4 text-custom">Selected Publications</h2>
+            <ul class="list-disc list-inside space-y-2">
+                <li>"Improving alignment of dialogue agents via targeted human judgements" (September 2022)</li>
+                <li>"Generating Agent Based Models From Scratch With Genetic Programming" (ALIFE Conference, July 2021)</li>
+                <li>"A Dynamic Microsimulation Model for Epidemics" (Social Science & Medicine, December 2021)</li>
+            </ul>
+        </section>
+
+        <section id="contact" class="mb-12">
+            <h2 class="text-3xl font-bold mb-4 text-custom">Contact</h2>
+            <p>Email: rorygreig@gmail.com</p>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2024 Rory Greig. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
-
 </html>
